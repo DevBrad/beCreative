@@ -1,10 +1,11 @@
 .main-wrapper {
     padding: 0 10rem;
-
+    
     .main-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 4rem;
 
         &__title {
             font-size: 3rem;
