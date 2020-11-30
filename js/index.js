@@ -3,14 +3,30 @@ var $saveAgeBtn = $('.presentation-wrapper-rght-age').find('.presentation-wrappe
 var $inputAge = $('.presentation-wrapper-rght-content').find('.presentation-wrapper-rght-content__input');
 var $actualAge = $('.presentation-wrapper-rght-age').find('.age');
 
-$showInputBtn.on('click', function() {
-    $inputAge.toggleClass('show-input')
-});
 
-$saveAgeBtn.on('click',function() {
-    $actualAge.text($inputAge.val());
+//Events
+$showInputBtn.on('click',showInput);
+$saveAgeBtn.on('click', saveAge);
+$inputAge.on('change',showSaveBtn);
+
+function showInput() {
+    $inputAge.addClass('show-input');
+}
+
+function saveAge() {
+    
+    if($inputAge.val() == "") {
+        alert('please fill out the field');
+    } else {
+        $actualAge.text($inputAge.val());
+    }
     
     setTimeout(function() {
         $inputAge.val('');
+        $saveAgeBtn.css('display','none');
     },500)
-});
+}
+
+function showSaveBtn() {
+    $saveAgeBtn.css('display','block');
+}

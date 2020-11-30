@@ -35,7 +35,7 @@
                 display: flex;
     
                 &__item {
-                    margin-right: 3rem;
+                    margin-right: 2rem;
                 }
     
                 &__link {
@@ -43,8 +43,8 @@
                     .icon {
                         font-size: 3rem;
                         opacity: 0.7;
-                        height: 50px;
-                        width: 50px;
+                        height: 40px;
+                        width: 40px;
                         border-radius: 40%;
                         display: flex;
                         align-items: center;
@@ -62,7 +62,7 @@
     
                     .fa-instagram {
                         color: $white;
-                        background-image: linear-gradient(to right, #ee1d23, #faaf18, #ffffff4b);
+                        background-image: linear-gradient(to right, #ee1d23, #faaf18);
                     }
     
                     .fa-github {
@@ -94,6 +94,7 @@
                 cursor: pointer;
                 font-size: 1.4rem;
                 letter-spacing: 0.1rem;
+                text-transform: uppercase;
             }
 
             .cta-1 {
@@ -113,7 +114,7 @@
         border: 4px solid $violet;
         border-radius: 0.3rem;
         padding: 2rem;
-        min-height: 600px;
+        min-height: 550px;
 
         position: relative;
 
@@ -172,6 +173,7 @@
                     cursor: pointer;
                     margin-right: 1rem;
                     opacity: 0.8;
+                    text-transform: uppercase;
 
                     &:hover {
                         opacity: 1;
@@ -187,6 +189,8 @@
                     border-radius: 0.2rem;
                     cursor: pointer;
                     opacity: 0.8;
+                    text-transform: uppercase;
+                    display: none;
 
                     &:hover {
                         opacity: 1;
@@ -203,7 +207,7 @@
                 display: none;
 
                 &:focus {
-                    box-shadow: 0 0 2px 2px red;
+                    box-shadow: 0 0 2px 2px $violet;
                     border: none;
                 }
             }
@@ -211,6 +215,10 @@
 
         .show-input {
             display: block;
+        }
+
+        .showSaveBtn {
+            display: flex;
         }
     }
 }
