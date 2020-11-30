@@ -39,12 +39,16 @@
                 }
     
                 &__link {
+                    text-decoration: none;
                     .icon {
                         font-size: 3rem;
-                        border: 1px solid $gray;
-                        border-radius: 5px;
-                        padding: 1rem 2rem;
                         opacity: 0.7;
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 40%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
 
                         &:hover {
                             opacity: 1;
@@ -52,15 +56,28 @@
                     }
     
                     .fa-google {
-                        color: $red;
+                        color: $white;
+                        background-color: $red;
                     }
     
                     .fa-instagram {
-                        color: $violet;
+                        color: $white;
+                        background-image: linear-gradient(to right, #ee1d23, #faaf18, #ffffff4b);
                     }
     
                     .fa-github {
-                        color: $black;
+                        color: $white;
+                        background-color: $black;
+                    }
+
+                    .fa-linkedin {
+                        color: $white;
+                        background-color: $light-blue;
+                    }
+
+                    .fa-facebook {
+                        color: $white;
+                        background-color: $blue;
                     }
                 }
             }
@@ -103,9 +120,9 @@
             position: absolute;
             content: "";
             top: 10%;
-            left: -22px;
-            width: 34px;
-            height: 34px;
+            left: -25px;
+            width: 40px;
+            height: 40px;
             border-top: 4px solid $violet;
             border-left: 4px solid $violet;
             transform: translateY(-50%);
