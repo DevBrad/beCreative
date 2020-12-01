@@ -26,16 +26,4 @@ function saveAge() {
         $errorAgeMsg.css('display','none');
         $inputAge.val('');
     }
-
-    // if($inputAge.hasClass('show-input') && $inputAge.val() == "") {
-
-    //     $errorAgeMsg.css('display','block');
-
-    // } else {
-
-    //     $actualAge.text($inputAge.val());
-    //     $errorAgeMsg.css('display','none');
-    //     $saveAgeBtn.css('display','none');
-    //     $inputAge.val('');
-    // }
 }
