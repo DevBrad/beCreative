@@ -220,5 +220,13 @@
         .showSaveBtn {
             display: flex;
         }
+
+        .error-age {
+            color: $red;
+            font-weight: bold;
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+            display: none;
+        }
     }
 }

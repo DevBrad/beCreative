@@ -2,31 +2,40 @@ var $showInputBtn = $('.presentation-wrapper-rght-age').find('.presentation-wrap
 var $saveAgeBtn = $('.presentation-wrapper-rght-age').find('.presentation-wrapper-rght-age__btn-save');
 var $inputAge = $('.presentation-wrapper-rght-content').find('.presentation-wrapper-rght-content__input');
 var $actualAge = $('.presentation-wrapper-rght-age').find('.age');
+var $errorAgeMsg = $('.presentation-wrapper-rght-content').find('.error-age');
 
 
 //Events
 $showInputBtn.on('click',showInput);
 $saveAgeBtn.on('click', saveAge);
-$inputAge.on('change',showSaveBtn);
 
 function showInput() {
     $inputAge.addClass('show-input');
+    $saveAgeBtn.css('display','block');
 }
 
 function saveAge() {
-    
-    if($inputAge.val() == "") {
-        alert('please fill out the field');
-    } else {
-        $actualAge.text($inputAge.val());
-    }
-    
-    setTimeout(function() {
-        $inputAge.val('');
-        $saveAgeBtn.css('display','none');
-    },500)
-}
 
-function showSaveBtn() {
-    $saveAgeBtn.css('display','block');
+    if(!$.isNumeric($inputAge.val())){
+
+        $errorAgeMsg.css('display','block');
+
+    } else {
+
+        $actualAge.text($inputAge.val());
+        $errorAgeMsg.css('display','none');
+        $inputAge.val('');
+    }
+
+    // if($inputAge.hasClass('show-input') && $inputAge.val() == "") {
+
+    //     $errorAgeMsg.css('display','block');
+
+    // } else {
+
+    //     $actualAge.text($inputAge.val());
+    //     $errorAgeMsg.css('display','none');
+    //     $saveAgeBtn.css('display','none');
+    //     $inputAge.val('');
+    // }
 }
