@@ -1,6 +1,7 @@
 .content-wrapper {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 3rem;
     .presentation-wrapper-lft {
         flex-basis: 50%;
         .presentation-wrapper-header {
@@ -95,6 +96,11 @@
                 font-size: 1.4rem;
                 letter-spacing: 0.1rem;
                 text-transform: uppercase;
+                opacity: 0.8;
+
+                &:hover {
+                    opacity: 1;
+                }
             }
 
             .cta-1 {

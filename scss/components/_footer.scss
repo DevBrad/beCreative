@@ -1,0 +1,20 @@
+.footer-wrapper {
+    background-color: $violet;
+    padding: 3rem;
+
+    .footer-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        &__link {
+            color: $white;
+            font-size: 1.3rem;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
