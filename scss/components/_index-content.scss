@@ -29,6 +29,7 @@
                 font-size: 2rem;
             }
         }
+        
         .presentation-wrapper-icons {
             margin-bottom: 4rem;
 
@@ -126,7 +127,6 @@
         border-radius: 0.3rem;
         padding: 2rem;
         min-height: 550px;
-
         position: relative;
 
         &::after {
@@ -238,6 +238,56 @@
             font-size: 1.2rem;
             letter-spacing: 0.1rem;
             display: none;
+        }
+    }
+}
+
+//mobile code
+
+@media only screen and (max-width: 767px) {
+    .content-wrapper {
+        flex-direction: column;
+
+        .presentation-wrapper-lft {
+            margin-bottom: 7rem;
+
+            .presentation-wrapper-header {
+
+                &__title {
+                    font-size: 4.1rem;
+                    text-align: center;
+                }
+
+                &__content {
+                    text-align: center;
+                }
+            }
+
+            .presentation-wrapper-icons {
+                
+                .presentation-wrapper-list {
+                    justify-content: center;
+                }
+            }
+
+            .cta-wrapper {
+                text-align: center;
+            }
+        }
+
+        .presentation-wrapper-rght {
+            padding: 3rem;
+
+            &::after {
+                top: -25px;
+                left: 10%;
+                width: 40px;
+                height: 40px;
+                border-right: 4px solid #7952b3;
+                border-left: transparent;
+                transform: translateX(-50%);
+                transform: rotate(-45deg);
+            }
         }
     }
 }
