@@ -1,3 +1,4 @@
+//desktop code
 .main-wrapper {
     padding: 0 10rem;
     
@@ -68,3 +69,72 @@
         }
     }
 }    
+
+//end desktop code
+
+//mobile code
+
+@media only screen and (max-width: 767px) {
+    .main-wrapper {
+        padding: 0 2rem;
+
+        .main-header {
+            overflow: hidden;
+            background-color: $violet;
+            position: relative;
+            padding: 3rem;
+            border-bottom-left-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+    
+            &__title {
+                font-size: 2rem;
+                display: none;
+            }
+
+            &__menu {
+                display: none;
+                width: 90%;
+                margin-top: 5rem;
+            }
+
+            &__menu-link {
+                color: $white;
+                padding: 15px 16px;
+                display: block;
+                font-size: 1.6rem;
+                letter-spacing: 0.1rem;
+
+                &:hover {
+                    
+                    &::after {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+
+            &__menu-item {
+                margin-right: 0;
+            }
+
+            .bars {
+                color: $white;
+                background-color: $violet;
+                display: block;
+                padding: 14px 16px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                font-size: 2rem;
+            }
+
+            .show-bars {
+                display: block;
+            }
+        }
+    }
+} 
+
+
+
+//end mobile code

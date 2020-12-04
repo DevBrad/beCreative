@@ -3,11 +3,14 @@ var $saveAgeBtn = $('.presentation-wrapper-rght-age').find('.presentation-wrappe
 var $inputAge = $('.presentation-wrapper-rght-content').find('.presentation-wrapper-rght-content__input');
 var $actualAge = $('.presentation-wrapper-rght-age').find('.age');
 var $errorAgeMsg = $('.presentation-wrapper-rght-content').find('.error-age');
+var $bars = $('.main-header').find('.bars');
+var $menuHeader = $('.main-header').find('.main-header__menu');
 
 
 //Events
 $showInputBtn.on('click',showInput);
 $saveAgeBtn.on('click', saveAge);
+$bars.on('click',showHeaderMenu);
 
 function showInput() {
     $inputAge.addClass('show-input');
@@ -26,4 +29,10 @@ function saveAge() {
         $errorAgeMsg.css('display','none');
         $inputAge.val('');
     }
+}
+
+function showHeaderMenu() {
+
+    $menuHeader.toggleClass('show-bars');
+    
 }

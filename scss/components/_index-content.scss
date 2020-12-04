@@ -2,8 +2,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 3rem;
+
     .presentation-wrapper-lft {
         flex-basis: 50%;
+
         .presentation-wrapper-header {
             margin-bottom: 6rem;
 
@@ -29,6 +31,7 @@
         }
         .presentation-wrapper-icons {
             margin-bottom: 4rem;
+
             .presentation-wrapper-list {
                 list-style: none;
                 margin: 0;
@@ -41,6 +44,7 @@
     
                 &__link {
                     text-decoration: none;
+
                     .icon {
                         font-size: 3rem;
                         opacity: 0.7;
@@ -85,6 +89,7 @@
         }
 
         .cta-wrapper {
+            
             .cta-1,
             .cta-2 {
                 padding: 1.2rem 2rem;
