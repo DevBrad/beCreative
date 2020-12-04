@@ -6,7 +6,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 4rem;
+        margin: 4rem 0;
 
         &__title {
             font-size: 3rem;
@@ -66,6 +66,9 @@
                     background-color: $violet;
                 }
             }
+        }
+        .bars {
+            display: none;
         }
     }
 }    
