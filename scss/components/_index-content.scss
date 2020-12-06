@@ -240,8 +240,29 @@
             display: none;
         }
     }
-}
 
+}
+.main-wrapper {
+
+    .wrapper-images {
+    width: 100%;
+    max-width: 800px;
+    height: 550px;
+    margin: 0 auto;
+
+        &__content {
+            width: 100%;
+            max-width: 800px;
+
+
+            img {
+                width: 100%;
+                max-width: 800px;
+                max-height: 550px;
+            }
+        }
+    }
+}
 //mobile code
 
 @media only screen and (max-width: 767px) {
